@@ -16,6 +16,8 @@ export default function FormContact(){
             
            if(state?.status === 'error'){
             toast.error(state.message)
+           } else {
+            toast.success(state.message)
            }
         
         

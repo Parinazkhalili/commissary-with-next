@@ -1,6 +1,9 @@
 
 "use server"
 
+import { postFetch } from "@/utils/fetch";
+import { handleError } from "@/utils/helper";
+
 async function create (state, formData) {
 
     const name = formData.get('name');
@@ -15,6 +18,24 @@ async function create (state, formData) {
         }
 }
 
+
+
+
+
+
+const data = await postFetch('/contact-us', {name, email, subject , text});
+if (data.status === 'success') {
+    return {
+            status: data.status ,
+            message: "پیام شما با موفقیت ثبت شد"
+        
+    }
+} else {
+    return {
+        status: data.status,
+        message: handleError(data.message),
+    }
+}
 
 }
 
