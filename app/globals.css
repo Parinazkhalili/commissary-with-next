@@ -1,7 +1,6 @@
-@import "bootstrap/dist/css/bootstrap.rtl.min.css";
-@import "bootstrap-icons/font/bootstrap-icons.css";
-@import 'react-toastify/dist/ReactToastify.css'; 
-
+@import 'bootstrap/dist/css/bootstrap.rtl.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'react-toastify/dist/ReactToastify.css';
 
 @font-face {
   font-family: "Vazir";
