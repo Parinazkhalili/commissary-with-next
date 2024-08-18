@@ -1311,3 +1311,9 @@ a:focus {
   font-family: "Vazir", sans-serif !important;
   direction: rtl;
 }
+
+.resend-opt-btn {
+  position: absolute;
+  left: 15px;
+  bottom: 16px;
+}
